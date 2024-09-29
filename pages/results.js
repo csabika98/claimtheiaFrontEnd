@@ -51,7 +51,7 @@ const Results = () => {
             <div className="row">
               <div className="col-md-6">
                 <img
-                  src={`http://localhost:5000${modified_image_url}`}
+                  src={`http://claimtheia1.northeurope.cloudapp.azure.com:5000${modified_image_url}`}
                   alt="modified Image"
                   className="img-fluid damage-image"
                 />

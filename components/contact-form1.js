@@ -45,10 +45,10 @@ const ContactForm1 = () => {
 
     try {
       // Submit form data to Flask backend
-      const response = await fetch('http://localhost:5000/upload', {
+      const response = await fetch('http://claimtheia1.northeurope.cloudapp.azure.com:5000/upload', {
         method: 'POST',
         body: uploadData,
-      });
+      });      
 
       if (response.ok) {
         const data = await response.json();
