@@ -4,22 +4,24 @@
   "description": "A next project generated based on a UIDL document",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "cross-env PORT=80 next",
     "build": "next build",
-    "start": "next start",
+    "start": "cross-env PORT=80 next start",
     "export": "next export"
   },
   "author": "TeleportHQ",
   "license": "MIT",
   "dependencies": {
+    "dangerous-html": "0.1.13",
     "next": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "prop-types": "15.7.2",
-    "dangerous-html": "0.1.13"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "engines": {
     "node": ">=18.x"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
